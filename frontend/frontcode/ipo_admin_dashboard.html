@@ -38,6 +38,8 @@
             padding: 10px;
             margin-bottom: 5px;
             cursor: pointer;
+            text-decoration: none; /* No underline on links */
+            color: inherit; /* Inherit color from parent */
         }
         .menu-item.active {
             background-color: #e0e7ff;
@@ -185,22 +187,22 @@
                     <div class="menu-icon"></div>
                     <span>Dashboard</span>
                 </div>
-                <div class="menu-item">
+                <a href="register_ipo_details_bluestock.html" class="menu-item">
                     <div class="menu-icon"></div>
                     <span>Manage IPO</span>
-                </div>
-                <div class="menu-item">
+                </a>
+                <a href="upcoming_ipo_bluestock.html" class="menu-item">
                     <div class="menu-icon"></div>
                     <span>IPO Subscription</span>
-                </div>
-                <div class="menu-item">
+                </a>
+                <a href="ipo_upcoming_screen.html" class="menu-item">
                     <div class="menu-icon"></div>
                     <span>IPO Allotment</span>
-                </div>
-                <div class="menu-item">
+                </a>
+                <a href="broker_compare.html" class="menu-item">
                     <div class="menu-icon"></div>
                     <span>Settings</span>
-                </div>
+                </a>
                 <div class="menu-item">
                     <div class="menu-icon"></div>
                     <span>API Manager</span>
@@ -256,15 +258,15 @@
                     <div class="legend">
                         <div class="legend-item">
                             <div class="legend-color" style="background-color: #4f46e5;"></div>
-                            <span>Upcomming</span>
+                            <span>Upcoming</span>
                         </div>
                         <div class="legend-item">
                             <div class="legend-color" style="background-color: #818cf8;"></div>
                             <span>New Listed</span>
                         </div>
                         <div class="legend-item">
-                            <div class="legend-color" style="background-color: #e0e7ff;"></div>
-                            <span>Ongoing</span>
+                            <div class="legend-color" style="background-color: #d1fae5;"></div>
+                            <span>Closed</span>
                         </div>
                     </div>
                 </div>
@@ -273,3 +275,4 @@
     </div>
 </body>
 </html>
+
