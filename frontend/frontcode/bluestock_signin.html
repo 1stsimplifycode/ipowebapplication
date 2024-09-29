@@ -129,7 +129,7 @@
             <!-- Replace with your actual logo -->
             <img src="C://Users//mailt//Desktop//BLUESTOCK//frontend_adishree//Copy of SITE1.png" alt="Bluestock Logo">
         </div>
-        <form>
+        <form onsubmit="handleLogin(event)">
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" value="johndoe@gmail.com" required>
@@ -156,7 +156,7 @@
             <button type="submit" class="login-button">Login</button>
         </form>
         <div class="or-divider">or sign in with</div>
-        <button class="google-login">
+        <button class="google-login" onclick="location.href='ipo_admin_dashboard.html'">
             <img src="C://Users//mailt//Desktop//BLUESTOCK//frontend_adishree//google.png" alt="Google logo">
             Continue with Google
         </button>
@@ -164,5 +164,13 @@
             <a href="bluestock_create_account.html">Create an account</a>
         </div>
     </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form submission
+            // Redirect to the dashboard
+            window.location.href = 'ipo_admin_dashboard.html';
+        }
+    </script>
 </body>
 </html>
